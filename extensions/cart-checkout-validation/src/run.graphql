@@ -1,0 +1,22 @@
+query RunInput {
+  
+  cart {
+    buyerIdentity {
+      purchasingCompany {
+        company {
+          metafield(namespace: "b2b", key: "credit_limit_remaining") {
+            value
+          }
+        }
+      }
+    }
+
+    cost {
+      totalAmount {
+        amount
+      }
+      
+    }
+  }
+
+}
